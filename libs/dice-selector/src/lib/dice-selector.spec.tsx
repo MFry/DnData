@@ -1,12 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import App from './app';
+import DiceSelector from './dice-selector';
 
-describe('App', () => {
+describe('DiceSelector', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<App />);
-
+    const { baseElement } = render(<DiceSelector />);
     expect(baseElement).toBeTruthy();
   });
 });
