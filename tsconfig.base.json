@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dndata/dice-selector": ["libs/dice-selector/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

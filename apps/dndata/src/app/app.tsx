@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import BattleInput from './components/battle';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
                 Learn React
               </a>
             </Route>
-            <Route path="/battle">{"Battle"}</Route>
+            <Route path="/battle"><BattleInput /></Route>
             <Route path="/adventure">{"Adventure"}</Route>
           </Switch>
       </div>
