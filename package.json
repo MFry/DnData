@@ -27,8 +27,10 @@
   },
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
     "@emotion/core": "10.0.28",
     "@emotion/styled": "10.0.27",
+    "antd": "^4.7.0",
     "document-register-element": "1.13.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",

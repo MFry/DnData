@@ -1,12 +1,21 @@
 import React from "react";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Button, DatePicker, version } from "antd";
+import styled from '@emotion/styled';
+
+import "antd/dist/antd.css";
 
 import BattleInput from './components/battle';
+
+const StyledApp = styled.div`
+  padding: 20px;
+`;
 
 function App() {
   return (
     <Router>
-      <div className="Dndata">
+      <StyledApp>
           <p>
             Edit <code>src/app/App.tsx</code> and save to reload.
           </p>
@@ -23,6 +32,9 @@ function App() {
           </ul>
           <Switch>
             <Route exact path="/">
+              <h1>antd version: {version}</h1>
+              <DatePicker />
+              <br />
               <a
                 className="App-link"
                 href="https://reactjs.org"
@@ -35,7 +47,7 @@ function App() {
             <Route path="/battle"><BattleInput /></Route>
             <Route path="/adventure">{"Adventure"}</Route>
           </Switch>
-      </div>
+      </StyledApp>
     </Router>
   );
 }
