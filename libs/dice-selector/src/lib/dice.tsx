@@ -22,11 +22,7 @@ const StyledDice = styled.div`
  * TODO: Make clickable
  */
 export const Dice = (props: DiceProps) => {
-  return (
-    <StyledDice>
-      {props.numberOfFaces}
-    </StyledDice>
-  );
+  return <StyledDice>{props.numberOfFaces}</StyledDice>;
 };
 
 export type { DiceProps };

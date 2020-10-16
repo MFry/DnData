@@ -12,7 +12,6 @@ const StyledDiceSelector = styled.div`
   width: 25vw;
 `;
 
-
 export const DiceSelector = (props: DiceSelectorProps) => {
   return (
     <StyledDiceSelector>
